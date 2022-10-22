@@ -24,6 +24,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Local
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -96,3 +98,7 @@ STATICFILES_DIRST = [BASE_DIR / "static"]
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# User
+AUTH_USER_MODEL = "accounts.User"
